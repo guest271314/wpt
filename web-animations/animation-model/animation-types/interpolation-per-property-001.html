@@ -18,13 +18,13 @@ html {
 'use strict';
 
 test(function() {
-  for (const property in gCSSProperties) {
+  for (const property in gCSSProperties1) {
     if (!isSupported(property)) {
       continue;
     }
 
-    const setupFunction = gCSSProperties[property].setup;
-    for (const animationType of gCSSProperties[property].types) {
+    const setupFunction = gCSSProperties1[property].setup;
+    for (const animationType of gCSSProperties1[property].types) {
       let typeObject;
       let animationTypeString;
       if (typeof animationType === 'string') {
